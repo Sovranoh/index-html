@@ -1,158 +1,121 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي الإلكتروني</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Tahoma, Arial, sans-serif;
-        }
-
-        body{
-            background:#f4f4f4;
-            color:#333;
-        }
-
-        header{
-            background:#0d6efd;
-            color:white;
-            padding:20px;
-            text-align:center;
-        }
-
-        nav{
-            background:#222;
-            display:flex;
-            justify-content:center;
-            gap:20px;
-            padding:15px;
-        }
-
-        nav a{
-            color:white;
-            text-decoration:none;
-            font-size:18px;
-        }
-
-        nav a:hover{
-            color:#0d6efd;
-        }
-
-        .hero{
-            text-align:center;
-            padding:80px 20px;
-        }
-
-        .hero h1{
-            font-size:40px;
-            margin-bottom:15px;
-        }
-
-        .hero p{
-            font-size:20px;
-            margin-bottom:20px;
-        }
-
-        .btn{
-            background:#0d6efd;
-            color:white;
-            padding:12px 25px;
-            border-radius:8px;
-            text-decoration:none;
-            font-size:18px;
-        }
-
-        .btn:hover{
-            background:#084fc7;
-        }
-
-        .cards{
-            display:flex;
-            flex-wrap:wrap;
-            justify-content:center;
-            gap:20px;
-            padding:40px;
-        }
-
-        .card{
-            background:white;
-            width:280px;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 4px 10px rgba(0,0,0,.1);
-            text-align:center;
-        }
-
-        .card h3{
-            margin-bottom:10px;
-        }
-
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:30px;
-        }
-
-        @media(max-width:700px){
-            .hero h1{
-                font-size:30px;
-            }
-
-            .cards{
-                flex-direction:column;
-                align-items:center;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>مرحبًا بك في موقعي</h1>
-</header>
-
-<nav>
-    <a href="#">الرئيسية</a>
-    <a href="#">من نحن</a>
-    <a href="#">الخدمات</a>
-    <a href="#">اتصل بنا</a>
-</nav>
-
-<section class="hero">
-    <h1>أنشئ موقعك بسهولة</h1>
-    <p>هذا مثال لموقع HTML يمكن استضافته مجانًا على GitHub Pages.</p>
-    <a href="#" class="btn">ابدأ الآن</a>
+<!-- من نحن -->
+<section style="padding:80px 20px;background:white;text-align:center;">
+    <h2>من نحن</h2>
+    <p style="max-width:800px;margin:20px auto;line-height:2;">
+        نحن فريق متخصص في تصميم وتطوير المواقع الإلكترونية الحديثة.
+        نعمل على إنشاء مواقع سريعة، متجاوبة، وعصرية تناسب جميع الأجهزة.
+    </p>
 </section>
 
-<section class="cards">
+<!-- الخدمات -->
+<section style="padding:80px 20px;background:#f8f9fa;">
+    <h2 style="text-align:center;">خدماتنا</h2>
 
-    <div class="card">
-        <h3>تصميم حديث</h3>
-        <p>واجهة جميلة ومتوافقة مع الهواتف.</p>
+    <div class="cards">
+
+        <div class="card">
+            <h3>تصميم المواقع</h3>
+            <p>تصميم واجهات حديثة وجذابة.</p>
+        </div>
+
+        <div class="card">
+            <h3>برمجة المواقع</h3>
+            <p>برمجة احترافية باستخدام أحدث التقنيات.</p>
+        </div>
+
+        <div class="card">
+            <h3>الحماية</h3>
+            <p>حماية المواقع من الهجمات والاختراق.</p>
+        </div>
+
     </div>
-
-    <div class="card">
-        <h3>سرعة عالية</h3>
-        <p>الموقع خفيف ويعمل بسرعة.</p>
-    </div>
-
-    <div class="card">
-        <h3>سهل التعديل</h3>
-        <p>يمكنك تغيير النصوص والألوان بسهولة.</p>
-    </div>
-
 </section>
 
-<footer>
-    <p>© 2026 جميع الحقوق محفوظة</p>
-</footer>
+<!-- معرض الأعمال -->
+<section style="padding:80px 20px;background:white;">
+    <h2 style="text-align:center;">معرض الأعمال</h2>
 
-</body>
-</html>
+    <div class="cards">
+        <div class="card">
+            <img src="https://picsum.photos/300/200?1" width="100%">
+            <h3>مشروع رقم 1</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?2" width="100%">
+            <h3>مشروع رقم 2</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?3" width="100%">
+            <h3>مشروع رقم 3</h3>
+        </div>
+    </div>
+</section>
+
+<!-- الإحصائيات -->
+<section style="padding:80px 20px;background:#0d6efd;color:white;">
+    <div class="cards">
+
+        <div class="card">
+            <h2>150+</h2>
+            <p>عميل</p>
+        </div>
+
+        <div class="card">
+            <h2>300+</h2>
+            <p>مشروع</p>
+        </div>
+
+        <div class="card">
+            <h2>8</h2>
+            <p>سنوات خبرة</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- آراء العملاء -->
+<section style="padding:80px 20px;background:#f8f9fa;">
+    <h2 style="text-align:center;">آراء العملاء</h2>
+
+    <div class="cards">
+        <div class="card">
+            ⭐⭐⭐⭐⭐
+            <p>أفضل تجربة في تصميم المواقع.</p>
+        </div>
+
+        <div class="card">
+            ⭐⭐⭐⭐⭐
+            <p>التعامل ممتاز والتنفيذ سريع.</p>
+        </div>
+
+        <div class="card">
+            ⭐⭐⭐⭐⭐
+            <p>أنصح بالتعامل معهم.</p>
+        </div>
+    </div>
+</section>
+
+<!-- تواصل -->
+<section style="padding:80px 20px;background:white;text-align:center;">
+
+    <h2>تواصل معنا</h2>
+
+    <form style="max-width:500px;margin:auto;">
+        <input type="text" placeholder="الاسم"
+        style="width:100%;padding:15px;margin:10px 0;">
+
+        <input type="email" placeholder="البريد الإلكتروني"
+        style="width:100%;padding:15px;margin:10px 0;">
+
+        <textarea placeholder="رسالتك"
+        style="width:100%;height:150px;padding:15px;margin:10px 0;"></textarea>
+
+        <button
+        style="padding:15px 40px;background:#0d6efd;color:white;border:none;border-radius:8px;">
+            إرسال
+        </button>
+    </form>
+
+</section>
