@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الإلكتروني</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Tahoma, Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#222;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:#0d6efd;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .hero h1{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            background:#0d6efd;
+            color:white;
+            padding:12px 25px;
+            border-radius:8px;
+            text-decoration:none;
+            font-size:18px;
+        }
+
+        .btn:hover{
+            background:#084fc7;
+        }
+
+        .cards{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+            padding:40px;
+        }
+
+        .card{
+            background:white;
+            width:280px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,.1);
+            text-align:center;
+        }
+
+        .card h3{
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:700px){
+            .hero h1{
+                font-size:30px;
+            }
+
+            .cards{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>مرحبًا بك في موقعي</h1>
+</header>
+
+<nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">من نحن</a>
+    <a href="#">الخدمات</a>
+    <a href="#">اتصل بنا</a>
+</nav>
+
+<section class="hero">
+    <h1>أنشئ موقعك بسهولة</h1>
+    <p>هذا مثال لموقع HTML يمكن استضافته مجانًا على GitHub Pages.</p>
+    <a href="#" class="btn">ابدأ الآن</a>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>تصميم حديث</h3>
+        <p>واجهة جميلة ومتوافقة مع الهواتف.</p>
+    </div>
+
+    <div class="card">
+        <h3>سرعة عالية</h3>
+        <p>الموقع خفيف ويعمل بسرعة.</p>
+    </div>
+
+    <div class="card">
+        <h3>سهل التعديل</h3>
+        <p>يمكنك تغيير النصوص والألوان بسهولة.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
