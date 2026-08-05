@@ -24,20 +24,37 @@ body{
 }
 
 /* ===========================
-   الوضع الليلي
+   الوضع الليلي (معدل)
 =========================== */
 
 body.dark{
     background:#111827;
-    color:#f1f1f1;
+    color:#f1f1f1; /* النص العام بالوضع الليلي يصير فاتح وواضح */
 }
 
 body.dark header{
     background:#1f2937;
 }
 
+body.dark header nav a{
+    color:#f1f1f1; /* حتى روابط القوائم بالهيدر تكون واضحة */
+}
+
+body.dark header nav a:hover{
+    color:#60a5fa;
+}
+
 body.dark .section{
     background:#182233;
+    color:#f1f1f1; /* ضمان أن النصوص داخل السكشن تكون واضحة */
+}
+
+/* إصلاح العناوين والنصوص داخل السكشن وفي كل مكان بالوضع الليلي */
+body.dark .section h2,
+body.dark .section p,
+body.dark .hero h1,
+body.dark .hero p {
+    color: #f1f1f1;
 }
 
 body.dark .card,
@@ -46,7 +63,19 @@ body.dark .stat-box,
 body.dark .timeline-item,
 body.dark details{
     background:#243447;
-    color:white;
+    color:#f1f1f1; /* لون النص داخل الكروت */
+}
+
+/* تفتيح عناوين الكروت والنصوص الفرعية ليظهر بوضوح تام */
+body.dark .card h3,
+body.dark .box h3,
+body.dark .stat-box h3,
+body.dark details summary {
+    color: #ffffff;
+}
+
+body.dark details p {
+    color: #d1d5db; /* رمادي فاتح مريح للعين داخل الـ FAQ */
 }
 
 /* ===========================
